@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8A45320194298FA00B94414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A4531F194298FA00B94414 /* Foundation.framework */; };
+		C8A45322194298FA00B94414 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A45321194298FA00B94414 /* CoreGraphics.framework */; };
+		C8A45324194298FA00B94414 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A45323194298FA00B94414 /* UIKit.framework */; };
+		C8A4532A194298FA00B94414 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8A45328194298FA00B94414 /* InfoPlist.strings */; };
+		C8A4532C194298FA00B94414 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A4532B194298FA00B94414 /* main.m */; };
+		C8A45330194298FA00B94414 /* DMAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A4532F194298FA00B94414 /* DMAAppDelegate.m */; };
+		C8A45332194298FA00B94414 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A45331194298FA00B94414 /* Images.xcassets */; };
+		C8A45339194298FA00B94414 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A45338194298FA00B94414 /* XCTest.framework */; };
+		C8A4533A194298FA00B94414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A4531F194298FA00B94414 /* Foundation.framework */; };
+		C8A4533B194298FA00B94414 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A45323194298FA00B94414 /* UIKit.framework */; };
+		C8A45343194298FA00B94414 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8A45341194298FA00B94414 /* InfoPlist.strings */; };
+		C8A45345194298FA00B94414 /* Digital_MagazineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A45344194298FA00B94414 /* Digital_MagazineTests.m */; };
+		C8A45350194299B300B94414 /* DMALoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A4534F194299B300B94414 /* DMALoginVC.m */; };
+		C8A4535319429C4900B94414 /* DMASignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A4535219429C4900B94414 /* DMASignUpVC.m */; };
+		C8A45356194340F000B94414 /* DMASingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A45355194340F000B94414 /* DMASingleton.m */; };
+		C8A4535919434E8100B94414 /* DMACollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A4535819434E8100B94414 /* DMACollectionVC.m */; };
+		C8A4535C19435CDB00B94414 /* DMACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A4535B19435CDB00B94414 /* DMACollectionViewCell.m */; };
+		C8A4536219436E8E00B94414 /* sm_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = C8A4536019436E8E00B94414 /* sm_twitter.png */; };
+		C8A4536319436E8E00B94414 /* sm_twitter_g.png in Resources */ = {isa = PBXBuildFile; fileRef = C8A4536119436E8E00B94414 /* sm_twitter_g.png */; };
+		C8A4536E1943A15700B94414 /* TLALocalCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A4536D1943A15700B94414 /* TLALocalCollectionViewController.m */; };
+		C8A453711943A18F00B94414 /* TLALocalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A453701943A18F00B94414 /* TLALocalCollectionViewCell.m */; };
+		C8A453731943A1D700B94414 /* TLAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A453721943A1D700B94414 /* TLAViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8A4533C194298FA00B94414 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8A45314194298FA00B94414 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8A4531B194298FA00B94414;
+			remoteInfo = "Digital Magazine";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C8A4531C194298FA00B94414 /* Digital Magazine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Magazine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8A4531F194298FA00B94414 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C8A45321194298FA00B94414 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C8A45323194298FA00B94414 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C8A45327194298FA00B94414 /* Digital Magazine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Digital Magazine-Info.plist"; sourceTree = "<group>"; };
+		C8A45329194298FA00B94414 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C8A4532B194298FA00B94414 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8A4532D194298FA00B94414 /* Digital Magazine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Digital Magazine-Prefix.pch"; sourceTree = "<group>"; };
+		C8A4532E194298FA00B94414 /* DMAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMAAppDelegate.h; sourceTree = "<group>"; };
+		C8A4532F194298FA00B94414 /* DMAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMAAppDelegate.m; sourceTree = "<group>"; };
+		C8A45331194298FA00B94414 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C8A45337194298FA00B94414 /* Digital MagazineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Digital MagazineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8A45338194298FA00B94414 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C8A45340194298FA00B94414 /* Digital MagazineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Digital MagazineTests-Info.plist"; sourceTree = "<group>"; };
+		C8A45342194298FA00B94414 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C8A45344194298FA00B94414 /* Digital_MagazineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Digital_MagazineTests.m; sourceTree = "<group>"; };
+		C8A4534E194299B300B94414 /* DMALoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMALoginVC.h; sourceTree = "<group>"; };
+		C8A4534F194299B300B94414 /* DMALoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMALoginVC.m; sourceTree = "<group>"; };
+		C8A4535119429C4900B94414 /* DMASignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMASignUpVC.h; sourceTree = "<group>"; };
+		C8A4535219429C4900B94414 /* DMASignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMASignUpVC.m; sourceTree = "<group>"; };
+		C8A45354194340F000B94414 /* DMASingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMASingleton.h; sourceTree = "<group>"; };
+		C8A45355194340F000B94414 /* DMASingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMASingleton.m; sourceTree = "<group>"; };
+		C8A4535719434E8100B94414 /* DMACollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMACollectionVC.h; sourceTree = "<group>"; };
+		C8A4535819434E8100B94414 /* DMACollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMACollectionVC.m; sourceTree = "<group>"; };
+		C8A4535A19435CDB00B94414 /* DMACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMACollectionViewCell.h; sourceTree = "<group>"; };
+		C8A4535B19435CDB00B94414 /* DMACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMACollectionViewCell.m; sourceTree = "<group>"; };
+		C8A4535F19436CAD00B94414 /* TLAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAViewController.h; sourceTree = "<group>"; };
+		C8A4536019436E8E00B94414 /* sm_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sm_twitter.png; path = ../sm_twitter.png; sourceTree = "<group>"; };
+		C8A4536119436E8E00B94414 /* sm_twitter_g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sm_twitter_g.png; path = ../sm_twitter_g.png; sourceTree = "<group>"; };
+		C8A4536C1943A14000B94414 /* TLALocalCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLALocalCollectionViewController.h; sourceTree = "<group>"; };
+		C8A4536D1943A15700B94414 /* TLALocalCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLALocalCollectionViewController.m; sourceTree = "<group>"; };
+		C8A4536F1943A17300B94414 /* TLALocalCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLALocalCollectionViewCell.h; sourceTree = "<group>"; };
+		C8A453701943A18F00B94414 /* TLALocalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLALocalCollectionViewCell.m; sourceTree = "<group>"; };
+		C8A453721943A1D700B94414 /* TLAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8A45319194298FA00B94414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8A45322194298FA00B94414 /* CoreGraphics.framework in Frameworks */,
+				C8A45324194298FA00B94414 /* UIKit.framework in Frameworks */,
+				C8A45320194298FA00B94414 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8A45334194298FA00B94414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8A45339194298FA00B94414 /* XCTest.framework in Frameworks */,
+				C8A4533B194298FA00B94414 /* UIKit.framework in Frameworks */,
+				C8A4533A194298FA00B94414 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8A45313194298FA00B94414 = {
+			isa = PBXGroup;
+			children = (
+				C8A4535A19435CDB00B94414 /* DMACollectionViewCell.h */,
+				C8A4535B19435CDB00B94414 /* DMACollectionViewCell.m */,
+				C8A4535F19436CAD00B94414 /* TLAViewController.h */,
+				C8A453721943A1D700B94414 /* TLAViewController.m */,
+				C8A4536C1943A14000B94414 /* TLALocalCollectionViewController.h */,
+				C8A4536D1943A15700B94414 /* TLALocalCollectionViewController.m */,
+				C8A4536F1943A17300B94414 /* TLALocalCollectionViewCell.h */,
+				C8A453701943A18F00B94414 /* TLALocalCollectionViewCell.m */,
+				C8A4535719434E8100B94414 /* DMACollectionVC.h */,
+				C8A4535819434E8100B94414 /* DMACollectionVC.m */,
+				C8A45354194340F000B94414 /* DMASingleton.h */,
+				C8A45355194340F000B94414 /* DMASingleton.m */,
+				C8A4535119429C4900B94414 /* DMASignUpVC.h */,
+				C8A4535219429C4900B94414 /* DMASignUpVC.m */,
+				C8A4534E194299B300B94414 /* DMALoginVC.h */,
+				C8A4534F194299B300B94414 /* DMALoginVC.m */,
+				C8A45325194298FA00B94414 /* Digital Magazine */,
+				C8A4533E194298FA00B94414 /* Digital MagazineTests */,
+				C8A4531E194298FA00B94414 /* Frameworks */,
+				C8A4531D194298FA00B94414 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8A4531D194298FA00B94414 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8A4531C194298FA00B94414 /* Digital Magazine.app */,
+				C8A45337194298FA00B94414 /* Digital MagazineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8A4531E194298FA00B94414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8A4531F194298FA00B94414 /* Foundation.framework */,
+				C8A45321194298FA00B94414 /* CoreGraphics.framework */,
+				C8A45323194298FA00B94414 /* UIKit.framework */,
+				C8A45338194298FA00B94414 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8A45325194298FA00B94414 /* Digital Magazine */ = {
+			isa = PBXGroup;
+			children = (
+				C8A4532E194298FA00B94414 /* DMAAppDelegate.h */,
+				C8A4532F194298FA00B94414 /* DMAAppDelegate.m */,
+				C8A45331194298FA00B94414 /* Images.xcassets */,
+				C8A45326194298FA00B94414 /* Supporting Files */,
+			);
+			path = "Digital Magazine";
+			sourceTree = "<group>";
+		};
+		C8A45326194298FA00B94414 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8A45327194298FA00B94414 /* Digital Magazine-Info.plist */,
+				C8A45328194298FA00B94414 /* InfoPlist.strings */,
+				C8A4532B194298FA00B94414 /* main.m */,
+				C8A4536019436E8E00B94414 /* sm_twitter.png */,
+				C8A4536119436E8E00B94414 /* sm_twitter_g.png */,
+				C8A4532D194298FA00B94414 /* Digital Magazine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8A4533E194298FA00B94414 /* Digital MagazineTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8A45344194298FA00B94414 /* Digital_MagazineTests.m */,
+				C8A4533F194298FA00B94414 /* Supporting Files */,
+			);
+			path = "Digital MagazineTests";
+			sourceTree = "<group>";
+		};
+		C8A4533F194298FA00B94414 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8A45340194298FA00B94414 /* Digital MagazineTests-Info.plist */,
+				C8A45341194298FA00B94414 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8A4531B194298FA00B94414 /* Digital Magazine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8A45348194298FA00B94414 /* Build configuration list for PBXNativeTarget "Digital Magazine" */;
+			buildPhases = (
+				C8A45318194298FA00B94414 /* Sources */,
+				C8A45319194298FA00B94414 /* Frameworks */,
+				C8A4531A194298FA00B94414 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Digital Magazine";
+			productName = "Digital Magazine";
+			productReference = C8A4531C194298FA00B94414 /* Digital Magazine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8A45336194298FA00B94414 /* Digital MagazineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8A4534B194298FA00B94414 /* Build configuration list for PBXNativeTarget "Digital MagazineTests" */;
+			buildPhases = (
+				C8A45333194298FA00B94414 /* Sources */,
+				C8A45334194298FA00B94414 /* Frameworks */,
+				C8A45335194298FA00B94414 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8A4533D194298FA00B94414 /* PBXTargetDependency */,
+			);
+			name = "Digital MagazineTests";
+			productName = "Digital MagazineTests";
+			productReference = C8A45337194298FA00B94414 /* Digital MagazineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8A45314194298FA00B94414 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DMA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Austen Johnson";
+				TargetAttributes = {
+					C8A45336194298FA00B94414 = {
+						TestTargetID = C8A4531B194298FA00B94414;
+					};
+				};
+			};
+			buildConfigurationList = C8A45317194298FA00B94414 /* Build configuration list for PBXProject "Digital Magazine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C8A45313194298FA00B94414;
+			productRefGroup = C8A4531D194298FA00B94414 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8A4531B194298FA00B94414 /* Digital Magazine */,
+				C8A45336194298FA00B94414 /* Digital MagazineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8A4531A194298FA00B94414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8A4532A194298FA00B94414 /* InfoPlist.strings in Resources */,
+				C8A45332194298FA00B94414 /* Images.xcassets in Resources */,
+				C8A4536219436E8E00B94414 /* sm_twitter.png in Resources */,
+				C8A4536319436E8E00B94414 /* sm_twitter_g.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8A45335194298FA00B94414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8A45343194298FA00B94414 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8A45318194298FA00B94414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8A4532C194298FA00B94414 /* main.m in Sources */,
+				C8A4535919434E8100B94414 /* DMACollectionVC.m in Sources */,
+				C8A453711943A18F00B94414 /* TLALocalCollectionViewCell.m in Sources */,
+				C8A45356194340F000B94414 /* DMASingleton.m in Sources */,
+				C8A453731943A1D700B94414 /* TLAViewController.m in Sources */,
+				C8A4535319429C4900B94414 /* DMASignUpVC.m in Sources */,
+				C8A4535C19435CDB00B94414 /* DMACollectionViewCell.m in Sources */,
+				C8A45330194298FA00B94414 /* DMAAppDelegate.m in Sources */,
+				C8A4536E1943A15700B94414 /* TLALocalCollectionViewController.m in Sources */,
+				C8A45350194299B300B94414 /* DMALoginVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8A45333194298FA00B94414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8A45345194298FA00B94414 /* Digital_MagazineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8A4533D194298FA00B94414 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8A4531B194298FA00B94414 /* Digital Magazine */;
+			targetProxy = C8A4533C194298FA00B94414 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C8A45328194298FA00B94414 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8A45329194298FA00B94414 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C8A45341194298FA00B94414 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8A45342194298FA00B94414 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8A45346194298FA00B94414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C8A45347194298FA00B94414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8A45349194298FA00B94414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Digital Magazine/Digital Magazine-Prefix.pch";
+				INFOPLIST_FILE = "Digital Magazine/Digital Magazine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C8A4534A194298FA00B94414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Digital Magazine/Digital Magazine-Prefix.pch";
+				INFOPLIST_FILE = "Digital Magazine/Digital Magazine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C8A4534C194298FA00B94414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Digital Magazine.app/Digital Magazine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Digital Magazine/Digital Magazine-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Digital MagazineTests/Digital MagazineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C8A4534D194298FA00B94414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Digital Magazine.app/Digital Magazine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Digital Magazine/Digital Magazine-Prefix.pch";
+				INFOPLIST_FILE = "Digital MagazineTests/Digital MagazineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8A45317194298FA00B94414 /* Build configuration list for PBXProject "Digital Magazine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8A45346194298FA00B94414 /* Debug */,
+				C8A45347194298FA00B94414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8A45348194298FA00B94414 /* Build configuration list for PBXNativeTarget "Digital Magazine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8A45349194298FA00B94414 /* Debug */,
+				C8A4534A194298FA00B94414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8A4534B194298FA00B94414 /* Build configuration list for PBXNativeTarget "Digital MagazineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8A4534C194298FA00B94414 /* Debug */,
+				C8A4534D194298FA00B94414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8A45314194298FA00B94414 /* Project object */;
+}

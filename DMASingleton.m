@@ -36,8 +36,6 @@
     chosenCaptions = [@{} mutableCopy];
     chosenDates = [@{} mutableCopy];
     chosenLocations = [@{} mutableCopy];
-
-
 }
 
 - (NSArray *)allDictionaries
@@ -48,6 +46,18 @@
              chosenDates,
              chosenLocations
              ];
+}
+
+- (NSMutableDictionary *)assets
+{
+    _assets = [@{
+                @"url" : @"",
+                @"caption" : @"",
+                @"date" : @"",
+                @"location" : @""
+                } mutableCopy];
+    
+    return _assets;
 }
 
 

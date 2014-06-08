@@ -16,6 +16,7 @@
 @property (nonatomic) float longitude;
 @property (nonatomic) NSDate * endDate;
 @property (nonatomic) NSDate * beginDate;
+@property (nonatomic) NSMutableDictionary * assets;
 
 - (void)setupArchitecture;
 

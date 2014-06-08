@@ -35,6 +35,7 @@
 		C8A4536E1943A15700B94414 /* TLALocalCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A4536D1943A15700B94414 /* TLALocalCollectionViewController.m */; };
 		C8A453711943A18F00B94414 /* TLALocalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A453701943A18F00B94414 /* TLALocalCollectionViewCell.m */; };
 		C8A453731943A1D700B94414 /* TLAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A453721943A1D700B94414 /* TLAViewController.m */; };
+		C8A4538A1944AAD500B94414 /* DMASocialContent.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A453891944AAD500B94414 /* DMASocialContent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		C8A4536F1943A17300B94414 /* TLALocalCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLALocalCollectionViewCell.h; sourceTree = "<group>"; };
 		C8A453701943A18F00B94414 /* TLALocalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLALocalCollectionViewCell.m; sourceTree = "<group>"; };
 		C8A453721943A1D700B94414 /* TLAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAViewController.m; sourceTree = "<group>"; };
+		C8A453881944AAD500B94414 /* DMASocialContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMASocialContent.h; sourceTree = "<group>"; };
+		C8A453891944AAD500B94414 /* DMASocialContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMASocialContent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 		C8A45313194298FA00B94414 = {
 			isa = PBXGroup;
 			children = (
+				C8A453881944AAD500B94414 /* DMASocialContent.h */,
+				C8A453891944AAD500B94414 /* DMASocialContent.m */,
 				C8A4534E194299B300B94414 /* DMALoginVC.h */,
 				C8A4534F194299B300B94414 /* DMALoginVC.m */,
 				C8A4535119429C4900B94414 /* DMASignUpVC.h */,
@@ -334,6 +339,7 @@
 				C8A4535319429C4900B94414 /* DMASignUpVC.m in Sources */,
 				0F19C0DF1944987B00178BB2 /* DMAViewController.m in Sources */,
 				C8A4535C19435CDB00B94414 /* DMACollectionViewCell.m in Sources */,
+				C8A4538A1944AAD500B94414 /* DMASocialContent.m in Sources */,
 				C8A45330194298FA00B94414 /* DMAAppDelegate.m in Sources */,
 				0F19C0E11944987B00178BB2 /* DMAAnnotation.m in Sources */,
 				C8A4536E1943A15700B94414 /* TLALocalCollectionViewController.m in Sources */,

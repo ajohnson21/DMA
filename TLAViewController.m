@@ -63,7 +63,7 @@
     socialSources.font = [UIFont fontWithName:@"Helvetica" size:20];
     socialSources.text = @"Social Media Filters";
     socialSources.textAlignment = NSTextAlignmentCenter;
-    socialSources.textColor = [UIColor blueColor];
+    socialSources.textColor = [UIColor colorWithWhite:.90 alpha:.90];
     [self.view addSubview:socialSources];
     
     twitter = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2-340,400,48,48)];
@@ -83,20 +83,28 @@
     goToCollection = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2-340, 600, 680, 80)];
     goToCollection.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
     goToCollection.layer.cornerRadius = 20;
-    goToCollection.layer.borderColor = [UIColor orangeColor].CGColor;
-    goToCollection.layer.borderWidth = 2;
+    goToCollection.alpha = .60;
     [goToCollection setTitle:@"Launch Social Scrapbook" forState:UIControlStateNormal];
     [goToCollection addTarget:self action:@selector(goToCollection) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:goToCollection];
     
     launchLocalScrapbook = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2-340, 480, 680, 80)];
     launchLocalScrapbook.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+    launchLocalScrapbook.alpha = .60;
     launchLocalScrapbook.layer.cornerRadius = 20;
-    launchLocalScrapbook.layer.borderColor = [UIColor orangeColor].CGColor;
-    launchLocalScrapbook.layer.borderWidth = 2;
+  
     [launchLocalScrapbook setTitle:@"Launch Local Scrapbook" forState:UIControlStateNormal];
     [launchLocalScrapbook addTarget:self action:@selector(launchLocalScrapbook) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:launchLocalScrapbook];
+    
+    
+    UIImageView *backgroundImage = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT)];
+    backgroundImage.contentMode = UIViewContentModeScaleToFill;       // UIViewContentModeScaleAspect;
+    [backgroundImage setImage:[UIImage imageNamed:@"gradblue.png"]];
+    
+    [self.view addSubview:backgroundImage];
+    [self.view sendSubviewToBack:backgroundImage];
+    
     
     
     [self beginDate];
@@ -115,9 +123,9 @@
 -(void)endDate
 {
     endDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2+100, 100, 100, 20)];
-    endDateLabel.font = [UIFont fontWithName:@"Helvetica" size:16];
+    endDateLabel.font = [UIFont fontWithName:@"Helvetica" size:20];
     endDateLabel.textAlignment = NSTextAlignmentLeft;
-    endDateLabel.textColor = [UIColor colorWithWhite:.70 alpha:.90];
+    endDateLabel.textColor = [UIColor colorWithWhite:.90 alpha:.90];
     endDateLabel.text = @"End Date";
     [self.view addSubview:endDateLabel];
     
@@ -136,8 +144,8 @@
 -(void)beginDate
 {
     beginDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2-340, 100, 100, 20)];
-    beginDateLabel.font = [UIFont fontWithName:@"Helvetica" size:16];
-    beginDateLabel.textColor = [UIColor colorWithWhite:.70 alpha:.90];
+    beginDateLabel.font = [UIFont fontWithName:@"Helvetica" size:20];
+    beginDateLabel.textColor = [UIColor colorWithWhite:.90 alpha:.90];
     beginDateLabel.textAlignment = NSTextAlignmentLeft;
     beginDateLabel.text = @"Begin Date";
     [self.view addSubview:beginDateLabel];

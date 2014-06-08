@@ -32,8 +32,8 @@
         loginForm = [[UIView alloc] initWithFrame:self.view.frame];
         [self.view addSubview:loginForm];
         
-        nameField = [[UITextField alloc] initWithFrame:CGRectMake((SCREEN_WIDTH /2 - 250), (SCREEN_HEIGHT /2 - 100), 500, 80)];
-        nameField.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
+        nameField = [[UITextField alloc] initWithFrame:CGRectMake((SCREEN_WIDTH /2 - 250), (SCREEN_HEIGHT /2), 500, 80)];
+        nameField.backgroundColor = [UIColor colorWithWhite:0.9 alpha:.60];
         nameField.placeholder = @" E-Mail";
         nameField.layer.cornerRadius = 6;
         nameField.autocapitalizationType = UITextAutocapitalizationTypeNone;
@@ -42,8 +42,8 @@
         [loginForm addSubview:nameField];
         nameField.delegate = self;
         
-        password = [[UITextField alloc] initWithFrame:CGRectMake((SCREEN_WIDTH /2 - 250), SCREEN_HEIGHT /2, 500, 80)];
-        password.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
+        password = [[UITextField alloc] initWithFrame:CGRectMake((SCREEN_WIDTH /2 - 250), SCREEN_HEIGHT /2+100, 500, 80)];
+        password.backgroundColor = [UIColor colorWithWhite:0.9 alpha:.60];
         password.secureTextEntry = YES;
         password.placeholder = @" password";
         password.layer.cornerRadius = 6;
@@ -51,23 +51,36 @@
         [loginForm addSubview:password];
         password.delegate = self;
         
-        signInButton = [[UIButton alloc] initWithFrame:CGRectMake((SCREEN_WIDTH /2 - 250), (SCREEN_HEIGHT /2) + 100, 500, 80)];
+        signInButton = [[UIButton alloc] initWithFrame:CGRectMake((SCREEN_WIDTH /2 - 250), (SCREEN_HEIGHT /2) + 200, 500, 80)];
         [signInButton setTitle:@"Sign In" forState:UIControlStateNormal];
         [signInButton addTarget:self action:@selector(signInButton) forControlEvents: UIControlEventTouchUpInside];
         signInButton.backgroundColor = [UIColor blueColor];
+        signInButton.alpha = .50;
         signInButton.layer.cornerRadius = 6;
-        signInButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
-        [signInButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        signInButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
+        [signInButton setTitleColor:[UIColor colorWithWhite:.85 alpha:.90] forState:UIControlStateNormal];
         [loginForm addSubview:signInButton];
         
-        signUpButton = [[UIButton alloc] initWithFrame:CGRectMake((SCREEN_WIDTH /2 - 250), (SCREEN_HEIGHT /2) + 200, 500, 80)];
+        signUpButton = [[UIButton alloc] initWithFrame:CGRectMake((SCREEN_WIDTH /2 - 250), (SCREEN_HEIGHT /2) + 300, 500, 80)];
         [signUpButton setTitle:@"Sign Up" forState:UIControlStateNormal];
         [signUpButton addTarget:self action:@selector(showSignUp) forControlEvents: UIControlEventTouchUpInside];
         signUpButton.backgroundColor = [UIColor lightGrayColor];
+        signUpButton.alpha = .50;
         signUpButton.layer.cornerRadius = 6;
-        signUpButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
-        [signUpButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        signUpButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
+        [signUpButton setTitleColor:[UIColor colorWithWhite:.85 alpha:.90] forState:UIControlStateNormal];
         [loginForm addSubview:signUpButton];
+        
+        
+        
+        UIImageView *backgroundImage = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT)];
+        backgroundImage.contentMode = UIViewContentModeScaleToFill;       // UIViewContentModeScaleAspect;
+        [backgroundImage setImage:[UIImage imageNamed:@"beach2.png"]];
+        
+        [self.view addSubview:backgroundImage];
+        [self.view sendSubviewToBack:backgroundImage];
+        
+        
     }
     return self;
 }

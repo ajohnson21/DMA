@@ -14,6 +14,7 @@
 {
     NSArray *venues = @[];
     
+    
     NSString *locationURL = [NSString stringWithFormat:@"https://api.foursquare.com/v2/venues/explore?ll=%f,%f&oauth_token=RO3OCMY1GOZKSSOIQQN4DKX2FNNAQBVQFFND4DMUTIHNIWPA&v=20140605", latitude, longitude];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:locationURL]];

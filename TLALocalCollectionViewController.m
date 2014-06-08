@@ -11,6 +11,8 @@
 #import "TLALocalCollectionViewController.h"
 #import "TLALocalCollectionViewCell.h"
 #import "DMASingleton.h"
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
 
@@ -125,7 +127,14 @@
         [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
         
     NSDate * date = [result valueForProperty:ALAssetPropertyDate];
-            
+//  CLLocation * location = [result valueForProperty:ALAssetPropertyLocation];
+//  double lat;
+//  lat = location.coordinate.latitude;
+//  double lng;
+//  lng = location.coordinate.longitude;
+//  NSLog(@"%f %f",lat,lng);
+     
+ 
     if (
         
         (([date compare:[DMASingleton sharedCollection].beginDate] == NSOrderedDescending) &&
@@ -141,11 +150,10 @@
     
         )
         {
-       
-            
-            
             
         // 3
+            
+            
             [tmpAssets addObject:result];
                 
             }

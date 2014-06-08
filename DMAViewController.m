@@ -134,7 +134,7 @@
                                                        MKCoordinateSpanMake(maxLat - minLat + (maxLat - minLat) /5, maxLong - minLong + (maxLong - minLong) /5));
     [fsMap setRegion:region animated:YES];
     int num = [venuesTVC.tableView.indexPathsForVisibleRows count];
-    NSLog(@"THE MOTHERFUCKING NUMBER OF ROWS %d",num);
+    NSLog(@"THE NUMBER OF ROWS %d",num);
     
     int points = [venuesTVC.tableView.indexPathsForVisibleRows count] * 100;
     currentPoints.text = [NSString stringWithFormat:@"%d", points];

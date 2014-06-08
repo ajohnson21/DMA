@@ -12,6 +12,7 @@
 #import "DMATableViewController.h"
 #import "DMA4Square.h"
 #import "DMAAnnotation.h"
+#import "DMASingleton.h"
 
 @interface DMAViewController () <CLLocationManagerDelegate>
 
@@ -21,7 +22,11 @@
 {
     MKMapView *fsMap;
     CLLocationManager *lManager;
+    
     CLLocation *currentLocation;
+   
+    
+    
     DMATableViewController * venuesTVC;
     UILabel *currentPoints;
     
@@ -79,7 +84,15 @@
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
-    currentLocation = [locations firstObject];
+    ///// SINGLETON WITH location nneds to come here
+    
+    
+    currentLocation = [[DMASingleton sharedCollection].locations lastObject];
+    NSLog(@"current location coordinates: %@",currentLocation);
+    
+    
+    
+   // currentLocation = [locations firstObject];
     
     NSArray *venues = [DMA4Square getVenuesWithLat:currentLocation.coordinate.latitude andLong:currentLocation.coordinate.longitude];
     

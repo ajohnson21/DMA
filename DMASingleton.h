@@ -19,6 +19,7 @@
 @property (nonatomic) NSMutableDictionary * assets;
 
 @property (nonatomic) NSMutableArray * localPhotoAssets;
+@property (nonatomic) NSMutableArray * locations;
 
 
 

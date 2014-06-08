@@ -128,8 +128,8 @@
 				0F19C0D61944987B00178BB2 /* DMA4Square.m */,
 				0F19C0D91944987B00178BB2 /* DMAViewController.h */,
 				0F19C0D81944987B00178BB2 /* DMAViewController.m */,
-				0F19C0DA1944987B00178BB2 /* DMATableViewController.m */,
 				0F19C0DB1944987B00178BB2 /* DMATableViewController.h */,
+				0F19C0DA1944987B00178BB2 /* DMATableViewController.m */,
 				0F19C0DC1944987B00178BB2 /* DMAAnnotation.m */,
 				0F19C0DD1944987B00178BB2 /* DMAAnnotation.h */,
 			);

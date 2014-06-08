@@ -26,6 +26,8 @@
 @implementation TLALocalCollectionViewController
 {
     
+    NSMutableArray * locations;
+    
 }
 
 -(id)initWithCollectionViewLayout:(UICollectionViewFlowLayout *)layout
@@ -189,6 +191,12 @@
             double lng;
             lng = location.coordinate.longitude;
             NSLog(@"%f %f",lat,lng);
+            
+            locations = [@[] mutableCopy];
+            if(location != nil) {[locations addObject:location];}
+            
+            [DMASingleton sharedCollection].locations = locations;
+            
             
             }
         }];

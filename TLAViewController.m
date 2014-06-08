@@ -94,7 +94,7 @@
     launchLocalScrapbook.layer.cornerRadius = 20;
     launchLocalScrapbook.layer.borderColor = [UIColor orangeColor].CGColor;
     launchLocalScrapbook.layer.borderWidth = 2;
-    [launchLocalScrapbook setTitle:@"Launch Scrapbook" forState:UIControlStateNormal];
+    [launchLocalScrapbook setTitle:@"Launch Local Scrapbook" forState:UIControlStateNormal];
     [launchLocalScrapbook addTarget:self action:@selector(launchLocalScrapbook) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:launchLocalScrapbook];
     
@@ -168,7 +168,7 @@
         
         NSLog(@"%@",[DMASingleton sharedCollection].endDate);
         
-        
+        beginDate.maximumDate = endDate.date;
     }
     else if(sender == beginDate)
     {
@@ -176,7 +176,9 @@
         
         [DMASingleton sharedCollection].beginDate = myBeginDate;
 
-
+        
+        endDate.minimumDate = beginDate.date;
+        
         NSLog(@"%@",myBeginDate);
     }
     

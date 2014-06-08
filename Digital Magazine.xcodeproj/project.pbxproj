@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0F19C0D31943B5AA00178BB2 /* sm_facebook_g.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F19C0D11943B5AA00178BB2 /* sm_facebook_g.png */; };
 		0F19C0D41943B5AA00178BB2 /* sm_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F19C0D21943B5AA00178BB2 /* sm_facebook.png */; };
+		0F19C0DE1944987B00178BB2 /* DMA4Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F19C0D61944987B00178BB2 /* DMA4Square.m */; };
+		0F19C0DF1944987B00178BB2 /* DMAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F19C0D81944987B00178BB2 /* DMAViewController.m */; };
+		0F19C0E01944987B00178BB2 /* DMATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F19C0DA1944987B00178BB2 /* DMATableViewController.m */; };
+		0F19C0E11944987B00178BB2 /* DMAAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F19C0DC1944987B00178BB2 /* DMAAnnotation.m */; };
 		C8A45320194298FA00B94414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A4531F194298FA00B94414 /* Foundation.framework */; };
 		C8A45322194298FA00B94414 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A45321194298FA00B94414 /* CoreGraphics.framework */; };
 		C8A45324194298FA00B94414 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A45323194298FA00B94414 /* UIKit.framework */; };
@@ -46,6 +50,14 @@
 /* Begin PBXFileReference section */
 		0F19C0D11943B5AA00178BB2 /* sm_facebook_g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_facebook_g.png; sourceTree = "<group>"; };
 		0F19C0D21943B5AA00178BB2 /* sm_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_facebook.png; sourceTree = "<group>"; };
+		0F19C0D61944987B00178BB2 /* DMA4Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMA4Square.m; sourceTree = "<group>"; };
+		0F19C0D71944987B00178BB2 /* DMA4Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMA4Square.h; sourceTree = "<group>"; };
+		0F19C0D81944987B00178BB2 /* DMAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAViewController.m; sourceTree = "<group>"; };
+		0F19C0D91944987B00178BB2 /* DMAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAViewController.h; sourceTree = "<group>"; };
+		0F19C0DA1944987B00178BB2 /* DMATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMATableViewController.m; sourceTree = "<group>"; };
+		0F19C0DB1944987B00178BB2 /* DMATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMATableViewController.h; sourceTree = "<group>"; };
+		0F19C0DC1944987B00178BB2 /* DMAAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAAnnotation.m; sourceTree = "<group>"; };
+		0F19C0DD1944987B00178BB2 /* DMAAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAAnnotation.h; sourceTree = "<group>"; };
 		C8A4531C194298FA00B94414 /* Digital Magazine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Magazine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A4531F194298FA00B94414 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8A45321194298FA00B94414 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,6 +118,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F19C0D5194497ED00178BB2 /* Map Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F19C0D61944987B00178BB2 /* DMA4Square.m */,
+				0F19C0D71944987B00178BB2 /* DMA4Square.h */,
+				0F19C0D81944987B00178BB2 /* DMAViewController.m */,
+				0F19C0D91944987B00178BB2 /* DMAViewController.h */,
+				0F19C0DA1944987B00178BB2 /* DMATableViewController.m */,
+				0F19C0DB1944987B00178BB2 /* DMATableViewController.h */,
+				0F19C0DC1944987B00178BB2 /* DMAAnnotation.m */,
+				0F19C0DD1944987B00178BB2 /* DMAAnnotation.h */,
+			);
+			name = "Map Files";
+			sourceTree = "<group>";
+		};
 		C8A45313194298FA00B94414 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +152,7 @@
 				C8A4535B19435CDB00B94414 /* DMACollectionViewCell.m */,
 				C8A45354194340F000B94414 /* DMASingleton.h */,
 				C8A45355194340F000B94414 /* DMASingleton.m */,
+				0F19C0D5194497ED00178BB2 /* Map Files */,
 				C8A45325194298FA00B94414 /* Digital Magazine */,
 				C8A4533E194298FA00B94414 /* Digital MagazineTests */,
 				C8A4531E194298FA00B94414 /* Frameworks */,
@@ -296,14 +324,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F19C0E01944987B00178BB2 /* DMATableViewController.m in Sources */,
 				C8A4532C194298FA00B94414 /* main.m in Sources */,
 				C8A4535919434E8100B94414 /* DMACollectionVC.m in Sources */,
+				0F19C0DE1944987B00178BB2 /* DMA4Square.m in Sources */,
 				C8A453711943A18F00B94414 /* TLALocalCollectionViewCell.m in Sources */,
 				C8A45356194340F000B94414 /* DMASingleton.m in Sources */,
 				C8A453731943A1D700B94414 /* TLAViewController.m in Sources */,
 				C8A4535319429C4900B94414 /* DMASignUpVC.m in Sources */,
+				0F19C0DF1944987B00178BB2 /* DMAViewController.m in Sources */,
 				C8A4535C19435CDB00B94414 /* DMACollectionViewCell.m in Sources */,
 				C8A45330194298FA00B94414 /* DMAAppDelegate.m in Sources */,
+				0F19C0E11944987B00178BB2 /* DMAAnnotation.m in Sources */,
 				C8A4536E1943A15700B94414 /* TLALocalCollectionViewController.m in Sources */,
 				C8A45350194299B300B94414 /* DMALoginVC.m in Sources */,
 			);

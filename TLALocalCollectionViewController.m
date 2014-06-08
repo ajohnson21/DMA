@@ -133,12 +133,18 @@
         
         ||
         
-        (([date compare:[DMASingleton sharedCollection].endDate] == NSOrderedSame) &&
-         ([date compare:[DMASingleton sharedCollection].beginDate] == NSOrderedSame) && result)
+        (([date compare:[DMASingleton sharedCollection].beginDate] == NSOrderedSame) && result)
+        
+        ||
+        
+        (([date compare:[DMASingleton sharedCollection].endDate] == NSOrderedSame) && result)
     
         )
         {
        
+            
+            
+            
         // 3
             [tmpAssets addObject:result];
                 

@@ -9,6 +9,7 @@
 #import "DMACollectionVC.h"
 #import "DMACollectionViewCell.h"
 #import "DMASingleton.h"
+#import "DMAViewController.h"  // VC for map
 
 @interface DMACollectionVC () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -95,6 +96,9 @@
 
 - (void)mapView
 {
+    DMAViewController *mapload = [[DMAViewController alloc] init];
+    [self.navigationController pushViewController:mapload animated:NO];
+    
     
 }
 

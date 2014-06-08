@@ -65,9 +65,10 @@
     currentPoints.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:currentPoints];
     
-    back = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2 -100,0,200,50)];
-    back.layer.backgroundColor = [UIColor darkGrayColor].CGColor;
+    back = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2 -100,20,200,50)];
+    back.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
     back.layer.cornerRadius = 10;
+    [back setTitle:@"Back" forState:UIControlStateNormal];
     [back addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:back];
     

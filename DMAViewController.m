@@ -62,11 +62,12 @@
     
     currentPoints = [[UILabel alloc] initWithFrame:CGRectMake(568, 0, 200, 100)];
     currentPoints.backgroundColor = [UIColor clearColor];
+    currentPoints.textColor = [UIColor orangeColor];
     currentPoints.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:currentPoints];
     
     back = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2 -100,20,200,50)];
-    back.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+    back.layer.backgroundColor = [UIColor colorWithWhite:.70 alpha:.90].CGColor;
     back.layer.cornerRadius = 10;
     [back setTitle:@"Back" forState:UIControlStateNormal];
     [back addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];

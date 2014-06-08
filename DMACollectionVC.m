@@ -98,12 +98,9 @@
 - (void)mapView
 {
    
-    
-    
     DMAViewController *mapload = [[DMAViewController alloc] init];
     [self.navigationController pushViewController:mapload animated:NO];
 
-    
 }
 
 @end

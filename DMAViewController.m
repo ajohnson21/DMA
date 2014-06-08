@@ -138,7 +138,6 @@
     
     int points = [venuesTVC.tableView.indexPathsForVisibleRows count] * 100;
     currentPoints.text = [NSString stringWithFormat:@"%d", points];
-
     
 }
 

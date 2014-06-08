@@ -146,7 +146,7 @@
     __block NSMutableArray * tmpAssets = [@[] mutableCopy];
     
     // 1
-    ALAssetsLibrary *assetsLibrary = [TLALocalCollectionViewController defaultAssetsLibrary];
+    ALAssetsLibrary * assetsLibrary = [TLALocalCollectionViewController defaultAssetsLibrary];
     
     // 2
     [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
@@ -154,7 +154,6 @@
         
     NSDate * date = [result valueForProperty:ALAssetPropertyDate];
  
-    CLLocation * location = [result valueForProperty:ALAssetPropertyLocation];
 //    double lat;
 //    lat = location.coordinate.latitude;
 //    double lng;
@@ -182,6 +181,9 @@
             
             [tmpAssets addObject:result];
             
+            [DMASingleton sharedCollection].localPhotoAssets = tmpAssets;
+            
+            CLLocation * location = [result valueForProperty:ALAssetPropertyLocation];
             double lat;
             lat = location.coordinate.latitude;
             double lng;

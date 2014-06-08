@@ -124,8 +124,8 @@
 		0F19C0D5194497ED00178BB2 /* Map Files */ = {
 			isa = PBXGroup;
 			children = (
-				0F19C0D61944987B00178BB2 /* DMA4Square.m */,
 				0F19C0D71944987B00178BB2 /* DMA4Square.h */,
+				0F19C0D61944987B00178BB2 /* DMA4Square.m */,
 				0F19C0D91944987B00178BB2 /* DMAViewController.h */,
 				0F19C0D81944987B00178BB2 /* DMAViewController.m */,
 				0F19C0DA1944987B00178BB2 /* DMATableViewController.m */,

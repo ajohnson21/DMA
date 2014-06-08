@@ -12,11 +12,15 @@
 
 + (DMASingleton *)sharedCollection;
 
-@property (nonatomic) float latitude;
-@property (nonatomic) float longitude;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
 @property (nonatomic) NSDate * endDate;
 @property (nonatomic) NSDate * beginDate;
 @property (nonatomic) NSMutableDictionary * assets;
+
+@property (nonatomic) NSMutableArray * localPhotoAssets;
+
+
 
 - (void)setupArchitecture;
 

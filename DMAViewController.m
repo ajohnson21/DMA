@@ -24,6 +24,9 @@
     CLLocation *currentLocation;
     DMATableViewController * venuesTVC;
     UILabel *currentPoints;
+    
+    UIButton * back;
+    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -61,6 +64,15 @@
     currentPoints.backgroundColor = [UIColor clearColor];
     currentPoints.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:currentPoints];
+    
+    back = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2 -100,0,200,50)];
+    back.layer.backgroundColor = [UIColor darkGrayColor].CGColor;
+    back.layer.cornerRadius = 10;
+    [back addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:back];
+    
+    
+    
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
@@ -125,6 +137,14 @@
     int points = [venuesTVC.tableView.indexPathsForVisibleRows count] * 100;
     currentPoints.text = [NSString stringWithFormat:@"%d", points];
 
+    
+}
+
+
+-(void)back
+{
+    
+    [self.navigationController popViewControllerAnimated:NO];
     
 }
 

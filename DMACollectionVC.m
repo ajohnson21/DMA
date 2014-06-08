@@ -77,6 +77,7 @@
     UIButton *mapButton =  [UIButton buttonWithType:UIButtonTypeCustom];
     [mapButton addTarget:self action:@selector(mapView)forControlEvents:UIControlEventTouchUpInside];
     [mapButton setFrame:CGRectMake(0, 0, 53, 31)];
+   
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(3, 5, 50, 20)];
     [label setFont:[UIFont fontWithName:@"AmericanTypewriter-Condensed" size:20]];
     [label setText:@"Map"];
@@ -96,9 +97,12 @@
 
 - (void)mapView
 {
+   
+    
+    
     DMAViewController *mapload = [[DMAViewController alloc] init];
     [self.navigationController pushViewController:mapload animated:NO];
-    
+
     
 }
 

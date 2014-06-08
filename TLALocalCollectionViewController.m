@@ -10,6 +10,7 @@
 
 #import "TLALocalCollectionViewController.h"
 #import "TLALocalCollectionViewCell.h"
+#import "DMASingleton.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
 
@@ -21,7 +22,6 @@
 
 @implementation TLALocalCollectionViewController
 {
-    
     
 }
 
@@ -38,8 +38,10 @@
         
         layout.sectionInset = UIEdgeInsetsMake(10, 0, 10, 0);
         
-
+        self.collectionView.backgroundColor = [UIColor colorWithWhite:0.90 alpha:1.0];
+        self.collectionView.backgroundView.backgroundColor = [UIColor colorWithWhite:0.90 alpha:1.0];
     
+        
     }
     return self;
 }
@@ -66,7 +68,6 @@
     
 
     return self.assets.count;
-    
 
 }
 
@@ -99,9 +100,63 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
 
     NSLog(@"did select cell");
+}
+
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // had to insert this to get rid of unrecognized selector crash
+    [self.collectionView registerClass:[TLALocalCollectionViewCell class] forCellWithReuseIdentifier:@"PhotoCell"];
+    
+    
+    // new code from tutorial
+    _assets = [@[] mutableCopy];
+    __block NSMutableArray * tmpAssets = [@[] mutableCopy];
+    
+    // 1
+    ALAssetsLibrary *assetsLibrary = [TLALocalCollectionViewController defaultAssetsLibrary];
+    
+    // 2
+    [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+        [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
+        
+    NSDate * date = [result valueForProperty:ALAssetPropertyDate];
+            
+    if (
+        
+        (([date compare:[DMASingleton sharedCollection].beginDate] == NSOrderedDescending) &&
+        ([date compare:[DMASingleton sharedCollection].endDate] == NSOrderedAscending))
+        
+        ||
+        
+        (([date compare:[DMASingleton sharedCollection].endDate] == NSOrderedSame) &&
+         ([date compare:[DMASingleton sharedCollection].beginDate] == NSOrderedSame) && result)
+    
+        )
+        {
+       
+        // 3
+            [tmpAssets addObject:result];
+                
+            }
+        }];
+        
+        //4
+        self.assets = tmpAssets;
+    
+        NSLog(@"%d",[self.assets count]);
+        
+        // 5
+        
+        [self.collectionView reloadData];
+    }   failureBlock:^(NSError *error) {
+        NSLog(@"Error loading images %@", error);
+        
+    }];
     
     
 }
@@ -114,23 +169,8 @@
   
     ALAsset * asset = self.assets[indexPath.row];
     cell.asset = asset;
+    cell.backgroundColor = [UIColor clearColor];
     
-    
-//    for (asset in self.assets)
-//    {
-//        NSDate * date = [asset valueForProperty:ALAssetPropertyDate];
-//    
-//        if ([date timeIntervalSinceReferenceDate] > [dateWnd timeIntervalSinceReferenceDate])
-//        {
-//            cell.asset = asset;
-//        }
-//    }
-  
-    
-      cell.backgroundColor = [UIColor colorWithWhite:0.50 alpha:.90];
-      cell.layer.cornerRadius = 5;
-      [cell.layer setBorderWidth:1];
-      [cell.layer setBorderColor:[UIColor lightGrayColor].CGColor];
 
     
     return cell;
@@ -138,48 +178,7 @@
 }
 
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    // had to insert this to get rid of unrecognized selector crash
-    [self.collectionView registerClass:[TLALocalCollectionViewCell class] forCellWithReuseIdentifier:@"PhotoCell"];
 
-    // new code from tutorial
-    _assets = [@[] mutableCopy];
-    __block NSMutableArray * tmpAssets = [@[] mutableCopy];
-    
-    // 1
-    ALAssetsLibrary *assetsLibrary = [TLALocalCollectionViewController defaultAssetsLibrary];
-    
-    // 2
-    [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-    [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
-            if(result)
-            {
-    // 3
-            [tmpAssets addObject:result];
-                
-            }
-        }];
-        
-    // 4
-    // NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO];
-    // self.assets = [tmpAssets sortedArrayUsingDescriptors:@[sort]];
-    
-    self.assets = tmpAssets;
-    
-        
-    // 5
-    
-        [self.collectionView reloadData];
-    }   failureBlock:^(NSError *error) {
-        NSLog(@"Error loading images %@", error);
-    
-    }];
-    
- 
-}
 
 
 

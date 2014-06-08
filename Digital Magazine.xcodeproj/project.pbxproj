@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F19C0D31943B5AA00178BB2 /* sm_facebook_g.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F19C0D11943B5AA00178BB2 /* sm_facebook_g.png */; };
+		0F19C0D41943B5AA00178BB2 /* sm_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F19C0D21943B5AA00178BB2 /* sm_facebook.png */; };
 		C8A45320194298FA00B94414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A4531F194298FA00B94414 /* Foundation.framework */; };
 		C8A45322194298FA00B94414 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A45321194298FA00B94414 /* CoreGraphics.framework */; };
 		C8A45324194298FA00B94414 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A45323194298FA00B94414 /* UIKit.framework */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F19C0D11943B5AA00178BB2 /* sm_facebook_g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_facebook_g.png; sourceTree = "<group>"; };
+		0F19C0D21943B5AA00178BB2 /* sm_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sm_facebook.png; sourceTree = "<group>"; };
 		C8A4531C194298FA00B94414 /* Digital Magazine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Magazine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A4531F194298FA00B94414 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8A45321194298FA00B94414 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -105,8 +109,10 @@
 		C8A45313194298FA00B94414 = {
 			isa = PBXGroup;
 			children = (
-				C8A4535A19435CDB00B94414 /* DMACollectionViewCell.h */,
-				C8A4535B19435CDB00B94414 /* DMACollectionViewCell.m */,
+				C8A4534E194299B300B94414 /* DMALoginVC.h */,
+				C8A4534F194299B300B94414 /* DMALoginVC.m */,
+				C8A4535119429C4900B94414 /* DMASignUpVC.h */,
+				C8A4535219429C4900B94414 /* DMASignUpVC.m */,
 				C8A4535F19436CAD00B94414 /* TLAViewController.h */,
 				C8A453721943A1D700B94414 /* TLAViewController.m */,
 				C8A4536C1943A14000B94414 /* TLALocalCollectionViewController.h */,
@@ -115,12 +121,10 @@
 				C8A453701943A18F00B94414 /* TLALocalCollectionViewCell.m */,
 				C8A4535719434E8100B94414 /* DMACollectionVC.h */,
 				C8A4535819434E8100B94414 /* DMACollectionVC.m */,
+				C8A4535A19435CDB00B94414 /* DMACollectionViewCell.h */,
+				C8A4535B19435CDB00B94414 /* DMACollectionViewCell.m */,
 				C8A45354194340F000B94414 /* DMASingleton.h */,
 				C8A45355194340F000B94414 /* DMASingleton.m */,
-				C8A4535119429C4900B94414 /* DMASignUpVC.h */,
-				C8A4535219429C4900B94414 /* DMASignUpVC.m */,
-				C8A4534E194299B300B94414 /* DMALoginVC.h */,
-				C8A4534F194299B300B94414 /* DMALoginVC.m */,
 				C8A45325194298FA00B94414 /* Digital Magazine */,
 				C8A4533E194298FA00B94414 /* Digital MagazineTests */,
 				C8A4531E194298FA00B94414 /* Frameworks */,
@@ -167,6 +171,8 @@
 				C8A4532B194298FA00B94414 /* main.m */,
 				C8A4536019436E8E00B94414 /* sm_twitter.png */,
 				C8A4536119436E8E00B94414 /* sm_twitter_g.png */,
+				0F19C0D11943B5AA00178BB2 /* sm_facebook_g.png */,
+				0F19C0D21943B5AA00178BB2 /* sm_facebook.png */,
 				C8A4532D194298FA00B94414 /* Digital Magazine-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -268,6 +274,8 @@
 			files = (
 				C8A4532A194298FA00B94414 /* InfoPlist.strings in Resources */,
 				C8A45332194298FA00B94414 /* Images.xcassets in Resources */,
+				0F19C0D31943B5AA00178BB2 /* sm_facebook_g.png in Resources */,
+				0F19C0D41943B5AA00178BB2 /* sm_facebook.png in Resources */,
 				C8A4536219436E8E00B94414 /* sm_twitter.png in Resources */,
 				C8A4536319436E8E00B94414 /* sm_twitter_g.png in Resources */,
 			);

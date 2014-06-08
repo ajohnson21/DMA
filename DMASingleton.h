@@ -14,8 +14,8 @@
 
 @property (nonatomic) float latitude;
 @property (nonatomic) float longitude;
-@property (nonatomic) NSString * endDate;
-@property (nonatomic) NSString * beginDate;
+@property (nonatomic) NSDate * endDate;
+@property (nonatomic) NSDate * beginDate;
 
 - (void)setupArchitecture;
 

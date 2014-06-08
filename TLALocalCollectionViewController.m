@@ -10,6 +10,7 @@
 
 #import "TLALocalCollectionViewController.h"
 #import "TLALocalCollectionViewCell.h"
+#import "DMAViewController.h"
 #import "DMASingleton.h"
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
@@ -42,7 +43,23 @@
         
         self.collectionView.backgroundColor = [UIColor colorWithWhite:0.90 alpha:1.0];
         self.collectionView.backgroundView.backgroundColor = [UIColor colorWithWhite:0.90 alpha:1.0];
+        self.navigationController.navigationBarHidden = NO;
+        
     
+        UIButton *mapButton =  [UIButton buttonWithType:UIButtonTypeCustom];
+        [mapButton addTarget:self action:@selector(mapView)forControlEvents:UIControlEventTouchUpInside];
+        [mapButton setFrame:CGRectMake(0, 0, 53, 31)];
+        
+        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(3, 5, 50, 20)];
+        [label setFont:[UIFont fontWithName:@"AmericanTypewriter-Condensed" size:20]];
+        [label setText:@"Map"];
+        label.textAlignment = NSTextAlignmentCenter;
+        [label setTextColor:[UIColor colorWithRed:0.000f green:0.478f blue:1.000f alpha:1.0f]];
+        [label setBackgroundColor:[UIColor clearColor]];
+        [mapButton addSubview:label];
+        UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithCustomView:mapButton];
+        self.navigationItem.rightBarButtonItem = barButton;
+        
         
     }
     return self;
@@ -57,6 +74,15 @@
     });
     return library;
 }
+
+-(void)mapView
+{
+    DMAViewController *mapload = [[DMAViewController alloc] init];
+    [self.navigationController pushViewController:mapload animated:NO];
+    
+
+}
+
 
 //- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 //{
@@ -127,12 +153,13 @@
         [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
         
     NSDate * date = [result valueForProperty:ALAssetPropertyDate];
-//  CLLocation * location = [result valueForProperty:ALAssetPropertyLocation];
-//  double lat;
-//  lat = location.coordinate.latitude;
-//  double lng;
-//  lng = location.coordinate.longitude;
-//  NSLog(@"%f %f",lat,lng);
+ 
+    CLLocation * location = [result valueForProperty:ALAssetPropertyLocation];
+//    double lat;
+//    lat = location.coordinate.latitude;
+//    double lng;
+//    lng = location.coordinate.longitude;
+//    NSLog(@"%f %f",lat,lng);
      
  
     if (
@@ -153,9 +180,14 @@
             
         // 3
             
-            
             [tmpAssets addObject:result];
-                
+            
+            double lat;
+            lat = location.coordinate.latitude;
+            double lng;
+            lng = location.coordinate.longitude;
+            NSLog(@"%f %f",lat,lng);
+            
             }
         }];
         
@@ -185,15 +217,9 @@
     cell.asset = asset;
     cell.backgroundColor = [UIColor clearColor];
     
-
-    
     return cell;
     
 }
-
-
-
-
 
 
 - (void)didReceiveMemoryWarning
